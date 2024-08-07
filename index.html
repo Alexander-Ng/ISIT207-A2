@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lexy Car Rental</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img src="logo.webp" alt="Lexy Car Rental Logo" class="logo">
+                <h1>Lexy Car Rental</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="cars.html" id="cars">Cars</a></li>
+                    <li><a href="contact.html" id="contact">Contact Us</a></li>
+                    <li><a href="login.html" id="login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content">
+            <section class="box">
+                <h1>Welcome to Lexy Car Rental</h1>
+                <p>Your best option for renting electric cars.</p>
+            </section>
+            <section class="box">
+                <h2>Search for Cars</h2>
+                <form id="searchForm">
+                    <label for="collectFrom">Collect From</label>
+                    <input type="text" id="collectFrom" name="collectFrom" placeholder="Type in 3 or more characters to start..." required>
+                    <div id="locationDropdown" class="dropdown-content"></div>
+                    
+                    <label for="car">Preferred Car</label>
+                    <select type="car" id="car" name="car">
+                        <option value="" disable selected hidden>Select a Car</option>
+                        <option value="tesla">Tesla Model S</option>
+                        <option value="nissan">Nissan Leaf</option>
+                        <option value="chevrolet">Chevrolet Bolt</option>
+                    </select>
+
+                    <div class="date-time">
+                        <label for="dateFrom">Pick Up Date</label>
+                        <input type="date" id="dateFrom" name="dateFrom" required>
+                        <input type="time" id="timeFrom" name="timeFrom" required>
+                        
+                        <label for="dateTo">Return Date</label>
+                        <input type="date" id="dateTo" name="dateTo" required>
+                        <input type="time" id="timeTo" name="timeTo" required>
+                    </div>
+                  
+                    <fieldset>
+                        <legend>Rental Type</legend>
+                        <label>
+                        <input type="radio" name="rentalType" value="leisure" required>
+                        Leisure
+                        </label>
+                        <label>
+                        <input type="radio" name="rentalType" value="business" required>
+                        Business
+                        </label>
+                        <label>
+                        <input type="radio" name="rentalType" value="other" required>
+                        Other
+                        </label>
+                    </fieldset>
+                  
+                    <label>
+                        <input type="checkbox" id="driverOver23" name="driverOver23" required>
+                        <span class="tooltip" title="Driver must be over 23 years old to rent with us.">Driver aged over 23?</span>
+                    </label>
+                  
+                    <label>
+                        <input type="checkbox" id="discountCode" name="discountCode">
+                        I have a discount code
+                    </label>
+                  
+                    <button type="submit">Find Cars</button>
+                </form>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </main>
+        <footer>
+            <p>&copy; 2024 Lexy Car Rental. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

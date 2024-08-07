@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.spectos.com/wp-content/uploads/2015/07/auto-for-rent.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    opacity: 95%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+    border: 1px solid #1c73e4;
+    border-radius: 20px;
+    background-color: #95bdf1;
+    opacity: 100%;
+    
+}
+*/
+  
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+  
+form input[type="text"], 
+form input[type="date"], 
+form input[type="time"], 
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="password"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: calc(100% - 22px);
+    border-radius: 10px;
+}
+
+form select[id="car"],
+form select[id="location"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: calc(100%);
+    border-radius: 10px;
+}
+
+form.date-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+form.date-time label, form.date-time input {
+    flex: 1;
+    margin: 5px;
+}
+  
+form fieldset {
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+}
+  
+form button {
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+  
+form button:hover {
+    background-color: #c9302c;
+}
+  
+form.tooltip {
+    cursor: pointer;
+    border-bottom: 1px dotted #000;
+}
+  
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.car-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.car-item img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+  
+.car-item h3 {
+    margin: 0;
+}
+  
+.car-item p {
+    margin: 5px 0 0;
+}
+
+#locationDropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: calc(100% - 22px);
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #locationDropdown div {
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+  
+  #locationDropdown div:hover {
+    background-color: #f1f1f1;
+  }
+  
+  #collectFrom {
+    width: calc(100% - 22px);
+    position: relative; 
+  }
+  
+  #locationDropdown {
+    display: none;
+    position: absolute; 
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: calc(100%); 
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 0;
+    border-radius: 10px;
+  }
+  
+  #locationDropdown div {
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+  
+  #locationDropdown div:hover {
+    background-color: #f1f1f1;
+  }
+  
+  form {
+    position: relative;
+  }

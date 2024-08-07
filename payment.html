@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lexy Car Rental</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img src="logo.webp" alt="Lexy Car Rental Logo" class="logo">
+                <h1>Lexy Car Rental</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content" class="box">
+            <section>
+                <h2>Review Your Selection</h2>
+                <div id="selectionDetails"></div>
+            </section>
+            <section>
+                <h2>Payment Details</h2>
+                <form id="paymentForm">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" pattern="\d{16}" required>
+                    
+                    <label for="cardExpiry">Expiry Date (mmyy)</label>
+                    <input type="text" id="cardExpiry" name="cardExpiry" pattern="(0[1-9]|1[0-2])\/?([0-9]{2})" required>
+                    
+                    <label for="cardCVC">CVC</label>
+                    <input type="password" id="cardCVC" name="cardCVC" pattern="\d{3}" required>
+                    
+                    <button type="submit">Pay Now</button>
+                    <div id="errorMessage" style="color:red; display:none;">Please enter valid payment details.</div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Lexy Car Rental. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
